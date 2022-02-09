@@ -15,4 +15,10 @@ final class ContentViewModel: ObservableObject {
     var secondPoint: Point
     
     
+    init(plane: Plane, firstPoint: Point, secondPoint: Point) {
+        self.plane = plane
+        self.firstPoint = firstPoint
+        self.secondPoint = secondPoint
+    }
+    
 }

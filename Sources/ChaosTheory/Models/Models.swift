@@ -8,17 +8,28 @@
 import Foundation
 
 struct MathFucks {
-    static func generateRandomVector(range: Size) -> Coordinate {
-        let vector: Coordinate
-        vector.x = Double.random(in: -1...1)
-        vector.y = Double.random(in: -1...1)
-        return vector
+    static func generateRandomVector<T: Coordinate>(range: Size) -> T {
+        
+        let x = Double.random(in: -1...1)
+        let y = Double.random(in: -1...1)
+        
+        
+        return T(x: x, y: y)
     }
 }
 
 protocol Coordinate {
     var x: Double { get set }
     var y: Double { get set }
+    init()
+}
+
+extension Coordinate {
+    init(x: Double, y: Double) {
+        self.init()
+        self.x = x
+        self.y = y
+    }
 }
 
 protocol Size {
