@@ -15,7 +15,7 @@
 		2102201027B45F1000FE477C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21021FFD27B45F1000FE477C /* Assets.xcassets */; };
 		2102201D27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
 		2102201E27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
-		2102202727B462DA00FE477C /* ChaosTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 2102202627B462DA00FE477C /* ChaosTheory */; };
+		2102203027B4671100FE477C /* ChaosTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 2102202F27B4671100FE477C /* ChaosTheory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2102202727B462DA00FE477C /* ChaosTheory in Frameworks */,
+				2102203027B4671100FE477C /* ChaosTheory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			);
 			name = "ChaosTheoryExample (iOS)";
 			packageProductDependencies = (
-				2102202627B462DA00FE477C /* ChaosTheory */,
+				2102202F27B4671100FE477C /* ChaosTheory */,
 			);
 			productName = "ChaosTheoryExample (iOS)";
 			productReference = 2102200227B45F1000FE477C /* ChaosTheoryExample.app */;
@@ -152,7 +152,7 @@
 			);
 			mainGroup = 21021FF527B45F0E00FE477C;
 			packageReferences = (
-				2102202527B462DA00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */,
+				2102202E27B4671100FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */,
 			);
 			productRefGroup = 2102200327B45F1000FE477C /* Products */;
 			projectDirPath = "";
@@ -468,20 +468,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2102202527B462DA00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */ = {
+		2102202E27B4671100FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ertembiyik/ChaosTheory.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2102202627B462DA00FE477C /* ChaosTheory */ = {
+		2102202F27B4671100FE477C /* ChaosTheory */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2102202527B462DA00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */;
+			package = 2102202E27B4671100FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */;
 			productName = ChaosTheory;
 		};
 /* End XCSwiftPackageProductDependency section */

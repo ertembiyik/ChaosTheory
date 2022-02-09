@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MathFucks {
+public struct MathFucks {
     static func generateRandomVector<T: Coordinate>(range: Size) -> T {
         
         let x = Double.random(in: -1...1)
@@ -18,7 +18,7 @@ struct MathFucks {
     }
 }
 
-protocol Coordinate {
+public protocol Coordinate {
     var x: Double { get set }
     var y: Double { get set }
     init()
@@ -32,40 +32,40 @@ extension Coordinate {
     }
 }
 
-protocol Size {
+public protocol Size {
     var width: Double { get set }
     var height: Double { get set }
 }
 
-protocol Cartesian {
+public protocol Cartesian {
     var location: Coordinate { get set }
     var size: Size { get set }
 }
 
 
-struct Plane: Cartesian {
-    var location: Coordinate
-    var size: Size
+public struct Plane: Cartesian {
+    public var location: Coordinate
+    public var size: Size
     
-    init(location: Coordinate, size: Size) {
+    public init(location: Coordinate, size: Size) {
         self.location = location
         self.size = size
     }
 }
 
-struct Point: Cartesian {
+public struct Point: Cartesian {
     
-    var location: Coordinate
-    var size: Size
-    var plane: Plane
+    public var location: Coordinate
+    public var size: Size
+    public var plane: Plane
     
-    init(location: Coordinate, size: Size, rootPlane: Plane) {
+    public init(location: Coordinate, size: Size, rootPlane: Plane) {
         self.location = location
         self.size = size
         self.plane = rootPlane
     }
     
-    mutating func moveBy(vector: Coordinate) {
+    public mutating func moveBy(vector: Coordinate) {
 
         if location.x + vector.x > plane.size.width {
             location.x = plane.size.width
