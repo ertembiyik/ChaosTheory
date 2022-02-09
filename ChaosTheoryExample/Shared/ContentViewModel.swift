@@ -22,8 +22,8 @@ final class ContentViewModel: ObservableObject {
     }
     
     func startSession() {
-        while firstPoint.location != secondPoint.location {
-            
+        while firstPoint != secondPoint {
+            let firstRandomVector = MathFucks.generateRandomVector<Double>(range: plane.size)
         }
     }
 }

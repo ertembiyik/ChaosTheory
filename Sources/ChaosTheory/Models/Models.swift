@@ -8,33 +8,24 @@
 import Foundation
 
 public struct MathFucks {
-    public static func generateRandomVector<T: Coordinate>(range: Size) -> T {
+    public static func generateRandomVector(range: Size) -> Coordinate {
         
         let x = Double.random(in: -1...1)
         let y = Double.random(in: -1...1)
         
         
-        return T(x: x, y: y)
+        return Coordinate(x: x, y: y)
     }
 }
 
-public protocol Coordinate {
-    var x: Double { get set }
-    var y: Double { get set }
-    init()
+public struct Coordinate {
+    var x: Double
+    var y: Double
 }
 
-extension Coordinate {
-    init(x: Double, y: Double) {
-        self.init()
-        self.x = x
-        self.y = y
-    }
-}
-
-public protocol Size {
-    var width: Double { get set }
-    var height: Double { get set }
+public struct Size {
+    var width: Double
+    var height: Double
 }
 
 public protocol Cartesian {
