@@ -11,8 +11,8 @@ import ChaosTheory
 final class ContentViewModel: ObservableObject {
     
     @Published var plane: Plane
-    @Published var firstPoint: Point
-    @Published var secondPoint: Point
+    var firstPoint: Point
+    var secondPoint: Point
     
     init(plane: Plane = Constants.plane, firstPoint: Point = Constants.firstPoint, secondPoint: Point = Constants.secondPoint) {
         self.plane = plane
@@ -20,7 +20,9 @@ final class ContentViewModel: ObservableObject {
         self.secondPoint = secondPoint
     }
     
-    func startSerialSession() {
+    func startSerialSession() -> Int {
+        var counter = 0
+        
         while firstPoint == secondPoint {
             let firstRandomVector = MathFucks.generateRandomVector(range: plane.size)
             
@@ -30,6 +32,7 @@ final class ContentViewModel: ObservableObject {
             
             self.secondPoint.moveBy(vector: secondRandomVector)
             
+            counter += 1
             break
         }
         
@@ -41,8 +44,12 @@ final class ContentViewModel: ObservableObject {
             self.firstPoint.moveBy(vector: firstRandomVector)
             
             self.secondPoint.moveBy(vector: secondRandomVector)
+            
+            counter += 1
         }
         
-        print(firstPoint.location, secondPoint.location)
+        print(firstPoint.location, secondPoint.location, counter)
+        
+        return counter
     }
 }

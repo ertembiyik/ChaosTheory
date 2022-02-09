@@ -21,7 +21,28 @@ struct ContentView: View {
     }
     
     func execute() {
-        viewModel.startSerialSession()
+        let queue = DispatchQueue(label: "queue", attributes: .concurrent)
+        
+        var array = [Int]()
+        
+        queue.async {
+            for _ in 0...1000 {
+                array.append(viewModel.startSerialSession())
+            }
+        }
+        
+        queue.sync(flags: .barrier) {
+            var total = 0
+            
+            for i in array {
+                total += i
+            }
+            
+            let average = total/array.count
+            
+            print(average)
+        }
+        
     }
 }
 
