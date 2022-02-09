@@ -70,12 +70,16 @@ public struct Point: Cartesian {
 
         if location.x + vector.x > plane.size.width {
             location.x = plane.size.width
+        } else if location.x + vector.x < plane.size.width {
+            location.x = 0
         } else {
             location.x += vector.x
         }
         
         if location.y + vector.y > plane.size.height {
             location.y = plane.size.height
+        } else if location.y + vector.y < plane.size.height {
+            location.y = 0
         } else {
             location.y += vector.y
         }
