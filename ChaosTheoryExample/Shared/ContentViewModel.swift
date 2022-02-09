@@ -9,8 +9,8 @@ import SwiftUI
 import ChaosTheory
 
 final class ContentViewModel: ObservableObject {
-    var plane: Plane
     
+    var plane: Plane
     var firstPoint: Point
     var secondPoint: Point
     
@@ -21,4 +21,9 @@ final class ContentViewModel: ObservableObject {
         self.secondPoint = secondPoint
     }
     
+    func startSession() {
+        while firstPoint.location != secondPoint.location {
+            
+        }
+    }
 }
