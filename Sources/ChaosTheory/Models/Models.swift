@@ -8,7 +8,7 @@
 import Foundation
 
 public struct MathFucks {
-    static func generateRandomVector<T: Coordinate>(range: Size) -> T {
+    public static func generateRandomVector<T: Coordinate>(range: Size) -> T {
         
         let x = Double.random(in: -1...1)
         let y = Double.random(in: -1...1)
