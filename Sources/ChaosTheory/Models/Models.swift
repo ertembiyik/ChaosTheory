@@ -9,7 +9,7 @@ import Foundation
 
 struct MathFucks {
     static func generateRandomVector(range: Size) -> Coordinate {
-        let vector = Coordinate()
+        let vector: Coordinate
         vector.x = Double.random(in: -1...1)
         vector.y = Double.random(in: -1...1)
         return vector
@@ -51,7 +51,7 @@ struct Point: Cartesian {
     init(location: Coordinate, size: Size, rootPlane: Plane) {
         self.location = location
         self.size = size
-        self.plane = plane
+        self.plane = rootPlane
     }
     
     mutating func moveBy(vector: Coordinate) {

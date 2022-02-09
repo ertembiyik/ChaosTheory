@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2102200B27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21021FFB27B45F0E00FE477C /* ChaosTheoryExampleApp.swift */; };
+		2102200C27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21021FFB27B45F0E00FE477C /* ChaosTheoryExampleApp.swift */; };
+		2102200D27B45F1000FE477C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21021FFC27B45F0E00FE477C /* ContentView.swift */; };
+		2102200E27B45F1000FE477C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21021FFC27B45F0E00FE477C /* ContentView.swift */; };
+		2102200F27B45F1000FE477C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21021FFD27B45F1000FE477C /* Assets.xcassets */; };
+		2102201027B45F1000FE477C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21021FFD27B45F1000FE477C /* Assets.xcassets */; };
+		2102201B27B45F4E00FE477C /* ChaosTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 2102201A27B45F4E00FE477C /* ChaosTheory */; };
+		2102201D27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
+		2102201E27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21021FFB27B45F0E00FE477C /* ChaosTheoryExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosTheoryExampleApp.swift; sourceTree = "<group>"; };
+		21021FFC27B45F0E00FE477C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21021FFD27B45F1000FE477C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2102200227B45F1000FE477C /* ChaosTheoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosTheoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2102200827B45F1000FE477C /* ChaosTheoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosTheoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2102200A27B45F1000FE477C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2102201C27B45F6400FE477C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21021FFF27B45F1000FE477C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2102201B27B45F4E00FE477C /* ChaosTheory in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2102200527B45F1000FE477C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21021FF527B45F0E00FE477C = {
+			isa = PBXGroup;
+			children = (
+				21021FFA27B45F0E00FE477C /* Shared */,
+				2102200927B45F1000FE477C /* macOS */,
+				2102200327B45F1000FE477C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21021FFA27B45F0E00FE477C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				21021FFB27B45F0E00FE477C /* ChaosTheoryExampleApp.swift */,
+				21021FFC27B45F0E00FE477C /* ContentView.swift */,
+				2102201C27B45F6400FE477C /* ContentViewModel.swift */,
+				21021FFD27B45F1000FE477C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2102200327B45F1000FE477C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2102200227B45F1000FE477C /* ChaosTheoryExample.app */,
+				2102200827B45F1000FE477C /* ChaosTheoryExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2102200927B45F1000FE477C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2102200A27B45F1000FE477C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2102200127B45F1000FE477C /* ChaosTheoryExample (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2102201327B45F1000FE477C /* Build configuration list for PBXNativeTarget "ChaosTheoryExample (iOS)" */;
+			buildPhases = (
+				21021FFE27B45F1000FE477C /* Sources */,
+				21021FFF27B45F1000FE477C /* Frameworks */,
+				2102200027B45F1000FE477C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChaosTheoryExample (iOS)";
+			packageProductDependencies = (
+				2102201A27B45F4E00FE477C /* ChaosTheory */,
+			);
+			productName = "ChaosTheoryExample (iOS)";
+			productReference = 2102200227B45F1000FE477C /* ChaosTheoryExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2102200727B45F1000FE477C /* ChaosTheoryExample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2102201627B45F1000FE477C /* Build configuration list for PBXNativeTarget "ChaosTheoryExample (macOS)" */;
+			buildPhases = (
+				2102200427B45F1000FE477C /* Sources */,
+				2102200527B45F1000FE477C /* Frameworks */,
+				2102200627B45F1000FE477C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChaosTheoryExample (macOS)";
+			productName = "ChaosTheoryExample (macOS)";
+			productReference = 2102200827B45F1000FE477C /* ChaosTheoryExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21021FF627B45F0E00FE477C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2102200127B45F1000FE477C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2102200727B45F1000FE477C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 21021FF927B45F0E00FE477C /* Build configuration list for PBXProject "ChaosTheoryExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21021FF527B45F0E00FE477C;
+			packageReferences = (
+				2102201927B45F4E00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */,
+			);
+			productRefGroup = 2102200327B45F1000FE477C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2102200127B45F1000FE477C /* ChaosTheoryExample (iOS) */,
+				2102200727B45F1000FE477C /* ChaosTheoryExample (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2102200027B45F1000FE477C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2102200F27B45F1000FE477C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2102200627B45F1000FE477C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2102201027B45F1000FE477C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21021FFE27B45F1000FE477C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2102200D27B45F1000FE477C /* ContentView.swift in Sources */,
+				2102200B27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */,
+				2102201D27B45F6400FE477C /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2102200427B45F1000FE477C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2102200E27B45F1000FE477C /* ContentView.swift in Sources */,
+				2102200C27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */,
+				2102201E27B45F6400FE477C /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2102201127B45F1000FE477C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2102201227B45F1000FE477C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2102201427B45F1000FE477C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MD55Y22MQS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ertembiyik.ChaosTheoryExample;
+				PRODUCT_NAME = ChaosTheoryExample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2102201527B45F1000FE477C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MD55Y22MQS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ertembiyik.ChaosTheoryExample;
+				PRODUCT_NAME = ChaosTheoryExample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2102201727B45F1000FE477C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MD55Y22MQS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ertembiyik.ChaosTheoryExample;
+				PRODUCT_NAME = ChaosTheoryExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2102201827B45F1000FE477C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MD55Y22MQS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ertembiyik.ChaosTheoryExample;
+				PRODUCT_NAME = ChaosTheoryExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21021FF927B45F0E00FE477C /* Build configuration list for PBXProject "ChaosTheoryExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2102201127B45F1000FE477C /* Debug */,
+				2102201227B45F1000FE477C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2102201327B45F1000FE477C /* Build configuration list for PBXNativeTarget "ChaosTheoryExample (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2102201427B45F1000FE477C /* Debug */,
+				2102201527B45F1000FE477C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2102201627B45F1000FE477C /* Build configuration list for PBXNativeTarget "ChaosTheoryExample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2102201727B45F1000FE477C /* Debug */,
+				2102201827B45F1000FE477C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2102201927B45F4E00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ertembiyik/ChaosTheory.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2102201A27B45F4E00FE477C /* ChaosTheory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2102201927B45F4E00FE477C /* XCRemoteSwiftPackageReference "ChaosTheory" */;
+			productName = ChaosTheory;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 21021FF627B45F0E00FE477C /* Project object */;
+}
