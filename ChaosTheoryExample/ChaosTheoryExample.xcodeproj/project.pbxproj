@@ -16,6 +16,8 @@
 		2102201D27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
 		2102201E27B45F6400FE477C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102201C27B45F6400FE477C /* ContentViewModel.swift */; };
 		2102203027B4671100FE477C /* ChaosTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 2102202F27B4671100FE477C /* ChaosTheory */; };
+		2102203227B46FF300FE477C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102203127B46FF300FE477C /* Constants.swift */; };
+		2102203327B46FF300FE477C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102203127B46FF300FE477C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		2102200827B45F1000FE477C /* ChaosTheoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosTheoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2102200A27B45F1000FE477C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2102201C27B45F6400FE477C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		2102203127B46FF300FE477C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				21021FFC27B45F0E00FE477C /* ContentView.swift */,
 				2102201C27B45F6400FE477C /* ContentViewModel.swift */,
 				21021FFD27B45F1000FE477C /* Assets.xcassets */,
+				2102203127B46FF300FE477C /* Constants.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -191,6 +195,7 @@
 				2102200D27B45F1000FE477C /* ContentView.swift in Sources */,
 				2102200B27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */,
 				2102201D27B45F6400FE477C /* ContentViewModel.swift in Sources */,
+				2102203227B46FF300FE477C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +206,7 @@
 				2102200E27B45F1000FE477C /* ContentView.swift in Sources */,
 				2102200C27B45F1000FE477C /* ChaosTheoryExampleApp.swift in Sources */,
 				2102201E27B45F6400FE477C /* ContentViewModel.swift in Sources */,
+				2102203327B46FF300FE477C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

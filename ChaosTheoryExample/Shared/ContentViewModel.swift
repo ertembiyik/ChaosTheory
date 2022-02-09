@@ -15,13 +15,23 @@ final class ContentViewModel: ObservableObject {
     @Published var secondPoint: Point
     
     
-    init(plane: Plane, firstPoint: Point, secondPoint: Point) {
+    
+    
+    init(plane: Plane = Constants.plane, firstPoint: Point = Constants.firstPoint, secondPoint: Point = Constants.secondPoint) {
         self.plane = plane
         self.firstPoint = firstPoint
         self.secondPoint = secondPoint
     }
     
     func startSerialSession() {
+        let firstRandomVector = MathFucks.generateRandomVector(range: plane.size)
+        
+        let secondRandomVector = MathFucks.generateRandomVector(range: plane.size)
+        
+        self.firstPoint.moveBy(vector: firstRandomVector)
+        
+        self.secondPoint.moveBy(vector: secondRandomVector)
+        
         while firstPoint != secondPoint {
             let firstRandomVector = MathFucks.generateRandomVector(range: plane.size)
             
@@ -31,5 +41,6 @@ final class ContentViewModel: ObservableObject {
             
             self.secondPoint.moveBy(vector: secondRandomVector)
         }
+        print(firstPoint.location, secondPoint.location)
     }
 }
