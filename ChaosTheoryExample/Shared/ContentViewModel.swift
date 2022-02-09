@@ -42,6 +42,7 @@ final class ContentViewModel: ObservableObject {
             
             self.secondPoint.moveBy(vector: secondRandomVector)
         }
+        
         print(firstPoint.location, secondPoint.location)
     }
 }

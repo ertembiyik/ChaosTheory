@@ -91,7 +91,7 @@ public struct Point: Cartesian {
 
 extension Point: Equatable {
     public static func == (lhs: Point, rhs: Point) -> Bool {
-        (lhs.location.x == rhs.location.y) && lhs.location.y == rhs.location.y
+        (lhs.location.x == rhs.location.x) && (lhs.location.y == rhs.location.y)
     }
 }
 
