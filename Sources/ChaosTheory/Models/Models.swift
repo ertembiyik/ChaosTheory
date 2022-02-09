@@ -21,11 +21,21 @@ public struct MathFucks {
 public struct Coordinate {
     var x: Double
     var y: Double
+    
+    public init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
+    }
 }
 
 public struct Size {
     var width: Double
     var height: Double
+    
+    public init(width: Double, height: Double) {
+        self.width = width
+        self.height = height
+    }
 }
 
 public protocol Cartesian {
