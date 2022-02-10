@@ -11,8 +11,8 @@ import ChaosTheory
 final class ContentViewModel: ObservableObject {
     
     @Published var plane: Plane
-    var firstPoint: Point
-    var secondPoint: Point
+    @Published var firstPoint: Point
+    @Published var secondPoint: Point
     
     init(plane: Plane = Constants.plane, firstPoint: Point = Constants.firstPoint, secondPoint: Point = Constants.secondPoint) {
         self.plane = plane

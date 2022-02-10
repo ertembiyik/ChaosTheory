@@ -19,8 +19,8 @@ public struct MathFucks {
 }
 
 public struct Coordinate {
-    var x: Int
-    var y: Int
+    public var x: Int
+    public var y: Int
     
     public init(x: Int, y: Int) {
         self.x = x
