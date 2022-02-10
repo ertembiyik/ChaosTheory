@@ -10,8 +10,8 @@ import Foundation
 public struct MathFucks {
     public static func generateRandomVector(range: Size) -> Coordinate {
         
-        let x = Double.random(in: -1...1)
-        let y = Double.random(in: -1...1)
+        let x = Int.random(in: -range.width/2...range.width/2)
+        let y = Int.random(in: -range.height/2...range.height/2)
         
         
         return Coordinate(x: x, y: y)
@@ -19,20 +19,20 @@ public struct MathFucks {
 }
 
 public struct Coordinate {
-    var x: Double
-    var y: Double
+    var x: Int
+    var y: Int
     
-    public init(x: Double, y: Double) {
+    public init(x: Int, y: Int) {
         self.x = x
         self.y = y
     }
 }
 
 public struct Size {
-    var width: Double
-    var height: Double
+    var width: Int
+    var height: Int
     
-    public init(width: Double, height: Double) {
+    public init(width: Int, height: Int) {
         self.width = width
         self.height = height
     }
