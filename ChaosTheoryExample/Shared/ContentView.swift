@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ChaosTheory
 
 struct ContentView: View {
     
@@ -13,11 +14,15 @@ struct ContentView: View {
     
     var body: some View {
 //        Text("First Point: \(viewModel.firstPoint.location)/nSecond Point: \(viewModel.secondPoint.location)")
-        Text("hello")
-            .padding()
-            .onAppear {
-                execute()
-            }
+        ZStack {
+            EmptyView()
+                .padding()
+                .onAppear {
+                    execute()
+                }
+            PointView()
+        }
+        
     }
     
     func execute() {
@@ -43,6 +48,21 @@ struct ContentView: View {
             print(average)
         }
     }
+}
+
+
+struct PointView: View {
+    
+    @Binding var point: Point
+    
+    var body: some View {
+        Rectangle()
+            .frame(width: 10, height: 10)
+            .position(x: CGFloat(point.location.x),
+                      y: CGFloat(point.location.y))
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
