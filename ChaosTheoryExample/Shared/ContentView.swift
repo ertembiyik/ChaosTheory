@@ -21,30 +21,27 @@ struct ContentView: View {
     }
     
     func execute() {
-//        let queue = DispatchQueue(label: "queue", attributes: .concurrent)
-//        
-//        var array = [Int]()
+        let queue = DispatchQueue(label: "queue", attributes: .concurrent)
         
-//        queue.async {
-//            for _ in 0...1000 {
-//                array.append(viewModel.startSerialSession())
-//            }
-//        }
-//
-//        queue.sync(flags: .barrier) {
-//            var total = 0
-//
-//            for i in array {
-//                total += i
-//            }
-//
-//            let average = total/array.count
-//
-//            print(average)
-//        }
+        var array = [Int]()
         
-        viewModel.startSerialSession()
-        
+        queue.async {
+            for _ in 0...1000 {
+                array.append(viewModel.startSerialSession())
+            }
+        }
+
+        queue.sync(flags: .barrier) {
+            var total = 0
+
+            for i in array {
+                total += i
+            }
+
+            let average = total/array.count
+
+            print(average)
+        }
     }
 }
 
