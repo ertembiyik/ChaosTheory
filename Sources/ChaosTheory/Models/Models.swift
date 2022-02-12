@@ -29,8 +29,8 @@ public struct Coordinate {
 }
 
 public struct Size {
-    var width: Int
-    var height: Int
+    public var width: Int
+    public var height: Int
     
     public init(width: Int, height: Int) {
         self.width = width
